@@ -1,4 +1,4 @@
-
+/* declaration des variables */
 :root {
     --font-size-default: 10px;
 }
@@ -23,6 +23,7 @@ body {
     height: 100vh;
 }
 
+/* traitement de la navbar */
 .nav_bar {
     display: flex;
     align-items: center;
@@ -33,6 +34,8 @@ body {
     padding: 0 5rem;
 }
 
+
+/* modification du logo */
 .nav_bar .logo a {
     text-decoration: none;
 }
@@ -43,6 +46,7 @@ body {
     text-transform: capitalize;
 }
 
+/* traitement de la navlinks */
 .nav_bar .nav_links {
     width: 40rem;
     height: 100%;
@@ -57,6 +61,7 @@ body {
     list-style: none;
 }
 
+/* modification des liens hypertextes */
 .nav_bar .nav_links ul a{
     text-decoration: none;
     font-size: 1.7rem;
@@ -64,6 +69,7 @@ body {
     color: #121212;
 }
 
+/* traitement du bouton */
 .nav_bar .nav_links ul button{
     padding: 0.8rem 2rem;
     font-weight: 600;
@@ -74,16 +80,20 @@ body {
     transition: all .30s ease;
 }
 
+/* utilisation de la speudo classe active pour le bouton login */
 .nav_bar .nav_links ul button:active {
     transform: scale(.9);
 }
 
+/* utilisation de la speudo classe hover pour le bouton login */
 .nav_bar .nav_links ul button:hover{
     background: #fff;
     color: #2f00ff;
     transform: scale(1.2);
 }
 
+
+/* traitement du bouton hamberger et masquage au niveau des desktop*/
 .nav_bar .btn  {
     display: none;
 }
@@ -100,6 +110,8 @@ body {
     color: #fff;
 }
 
+
+/* utilisation des media query pour le responsive */
 @media only screen and (max-width:800px) {
     .nav_bar {
         padding: 0 2rem;
@@ -126,10 +138,12 @@ body {
         margin-top: 6rem;
     }
 
+    /* modification du mobile-menu */
     .nav_bar .mobile-menu{
         margin-left: 0;
     }
 
+    /* traitement du bouton hamberger et apparition au niveau des mobile-phones*/
     .nav_bar .btn {
         display: block;
     }

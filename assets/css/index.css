@@ -1,0 +1,138 @@
+
+:root {
+    --font-size-default: 10px;
+}
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--font-size-default);
+}
+
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background: #3884ff;
+    padding: 0 5rem;
+}
+
+.nav_bar .logo a {
+    text-decoration: none;
+}
+
+.nav_bar h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.nav_bar .nav_links {
+    width: 40rem;
+    height: 100%;
+}
+
+.nav_bar .nav_links ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav_bar .nav_links ul a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    color: #121212;
+}
+
+.nav_bar .nav_links ul button{
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    background: #2f00ff;
+    border-radius: .5rem;
+    transition: all .30s ease;
+}
+
+.nav_bar .nav_links ul button:active {
+    transform: scale(.9);
+}
+
+.nav_bar .nav_links ul button:hover{
+    background: #fff;
+    color: #2f00ff;
+    transform: scale(1.2);
+}
+
+.nav_bar .btn  {
+    display: none;
+}
+
+.nav_bar .btn button {
+    width: 5rem;
+    height: 4rem;
+    background: transparent;
+}
+
+.nav_bar .btn button ion-icon {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+@media only screen and (max-width:800px) {
+    .nav_bar {
+        padding: 0 2rem;
+    }
+
+    .nav_bar .nav_links {
+        position: absolute;
+        width: 50%;
+        left: 0;
+        /* top: 5rem; */
+        top: 0;
+        height: 100vh;
+        backdrop-filter: blur(1px);
+        background: rgba(27, 43, 82, 0.472);
+        margin-left: -100%;
+        transition: all 1s ease;
+    }
+
+    .nav_bar .nav_links ul {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+    .nav_bar .mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav_bar .btn {
+        display: block;
+    }
+}
+
+
